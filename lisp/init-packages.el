@@ -64,7 +64,6 @@
 (setq enable-recursive-minibuffers t)
 
 ;; Always start smartparens mode in js-mode.
-(require 'smartparens-config)
 ;;(add-hook 'js-mode-hook #'smartparens-mode)
 ;;(add-hook 'emacs-lisp-mode-hook 'smartparens-mode)
 (smartparens-global-mode t)
