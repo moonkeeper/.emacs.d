@@ -17,5 +17,10 @@
 (global-set-key (kbd "C-x C-f") 'counsel-find-file)
 (global-set-key (kbd "C-h f") 'counsel-describe-function)
 (global-set-key (kbd "C-h v") 'counsel-describe-variable)
+;; 一般 C-c开头的快捷键为用户自定义 , p = project 一般以git仓库为一个项目 f = find file
+(global-set-key (kbd "C-c p f") 'counsel-git)
+
+;; solidity
+(define-key solidity-mode-map (kbd "C-c C-g") 'solidity-estimate-gas-at-point)
 
 (provide 'init-keybindings)

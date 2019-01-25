@@ -30,6 +30,11 @@
 			 exec-path-from-shell
 			 ;; 打开buffer同时移动光标
 			 popwin
+			 ;; solidity
+			 solidity-mode
+			 company-solidity
+			 flymake-solidity
+			 
 			 ) "Default packages")
 
 (setq package-selected-packages linus/packages)
@@ -84,5 +89,12 @@
 
 ;;load theme
 (load-theme 'monokai t)
+
+;; config solidity
+(require 'solidity-mode)
+(require 'company-solidity)
+
+(require 'flymake-solidity)
+(add-hook 'solidity-mode-hook 'flymake-solidity-load)
 
 (provide 'init-packages)
