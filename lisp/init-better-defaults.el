@@ -24,6 +24,7 @@
 ;;
 (delete-selection-mode t)
 
+;;indent enhance
 (defun indent-buffer()
   (interactive)
   (indent-region (point-min) (point-max)))
@@ -39,5 +40,34 @@
 	  (progn
 	    (indent-buffer)
 	    (message "Indented buffer."))))))
+
+;;hippie
+(setq hippie-expand-try-functions-list '(
+					 try-expand-dabbrev
+					 try-expand-dabbrev-all-buffers
+					 try-expand-dabbrev-from-kill
+					 try-complete-file-name-partially
+					 try-complete-file-name
+					 try-expand-all-abbrevs
+					 try-expand-list
+					 try-expand-line
+					 try-complete-lisp-symbol-partially
+					 try-complete-lisp-symbol))
+
+;; set ask confirm yes or no
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; Dired-mode
+(setq dired-recursive-deletes 'always)
+(setq dired-recursive-copies 'always)
+
+;; Dired-mode make dired  using only one buffer
+;; load delay
+(put 'dired-find-alternate-file 'disabled nil)
+
+;;Dired-x  open current buffer directory
+(require 'dired-x)
+
+(setq dired-dwim-target t)
 
 (provide 'init-better-defaults)

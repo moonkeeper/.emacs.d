@@ -26,6 +26,14 @@
 ;;indent-buffer
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
-(provide 'init-keybindings)
+;;hippie-expand enhance company-mode s=command
+(global-set-key (kbd "s-/") 'hippie-expand)
+
+;; dired bindkeys RET after load dired
+(with-eval-after-load 'dired
+  (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
+  )
 
 (provide 'init-keybindings)
+
+

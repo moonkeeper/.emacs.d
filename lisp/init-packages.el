@@ -34,7 +34,8 @@
 			 solidity-mode
 			 company-solidity
 			 flymake-solidity
-			 
+			 ;; open file to finder
+			 reveal-in-osx-finder
 			 ) "Default packages")
 
 (setq package-selected-packages linus/packages)
