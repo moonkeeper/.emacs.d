@@ -23,4 +23,7 @@
 ;; solidity
 (define-key solidity-mode-map (kbd "C-c C-g") 'solidity-estimate-gas-at-point)
 
+;;indent-buffer
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer')
+
 (provide 'init-keybindings)
