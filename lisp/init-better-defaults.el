@@ -67,7 +67,12 @@
 
 ;;Dired-x  open current buffer directory
 (require 'dired-x)
-
 (setq dired-dwim-target t)
+
+;; quota
+(sp-local-pair 'emacs-lisp-mode "'" nil :actions nil)
+
+(setq neo-theme 'icons)
+
 
 (provide 'init-better-defaults)

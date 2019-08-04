@@ -20,8 +20,6 @@
 ;; 一般 C-c开头的快捷键为用户自定义 , p = project 一般以git仓库为一个项目 f = find file
 (global-set-key (kbd "C-c p f") 'counsel-git)
 
-;; solidity
-(define-key solidity-mode-map (kbd "C-c C-g") 'solidity-estimate-gas-at-point)
 
 ;;indent-buffer
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
@@ -34,6 +32,8 @@
   (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
   )
 
+
+(global-set-key [f8] 'neotree-toggle)
 (provide 'init-keybindings)
 
 

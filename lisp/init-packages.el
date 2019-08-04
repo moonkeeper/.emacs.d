@@ -14,7 +14,7 @@
 			 ;; 补全
 			 company
 			 ;; 主题
-			 monokai-theme
+			 material-theme
 			 ;; hungrey delete
 			 hungry-delete
 			 ;;
@@ -30,12 +30,29 @@
 			 exec-path-from-shell
 			 ;; 打开buffer同时移动光标
 			 popwin
-			 ;; solidity
-			 solidity-mode
-			 company-solidity
-			 flymake-solidity
 			 ;; open file to finder
 			 reveal-in-osx-finder
+			 ;;org export markdown
+
+			 ;;go-mode
+			 go-mode
+			 ;;go-eldoc
+			 go-eldoc
+			 ;;go-autocomplete
+			 go-autocomplete
+			 ;;
+			 golint
+			 ;;auto-complete
+			 auto-complete
+
+			 ;;python
+			 elpy
+			 flycheck
+			 py-autopep8
+			 ein
+
+			 neotree
+			 all-the-icons
 			 ) "Default packages")
 
 (setq package-selected-packages linus/packages)
@@ -51,7 +68,7 @@
   (message "%s" "Refreshing package database...")
   (package-refresh-contents)
   (dolist (pkg linus/packages)
-    (when (not (package-installed-p pkg))
+     (when (not (package-installed-p pkg))
       (package-install pkg)
       )
     )
@@ -89,13 +106,8 @@
 (popwin-mode 1)
 
 ;;load theme
-(load-theme 'monokai t)
-
-;; config solidity
-(require 'solidity-mode)
-(require 'company-solidity)
-
-(require 'flymake-solidity)
-(add-hook 'solidity-mode-hook 'flymake-solidity-load)
+(load-theme 'material t)
 
 (provide 'init-packages)
+
+

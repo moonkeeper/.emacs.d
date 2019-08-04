@@ -2,3 +2,6 @@
 recentf
 auto-save-list
 smex-items
+
+elpa/
+*.dat
