@@ -1,0 +1,10 @@
+* emacs_learning_plan
+** resource_url
+*** https://book.emacs-china.org/#orgda701be
+*** https://book1.emacs-china.org/#orgfd63c2
+
+* JDK_learing_plan
+** thread_pool
+*** resource_url
+**** https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
+**** https://cloud.tencent.com/developer/article/1962369
