@@ -11,6 +11,13 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 
+;; 设置字体大小
+(set-face-attribute 'default nil :height 160);;
+
+;; 设置鼠标
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil)
+
 ;;添加路径
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'init-packages)
