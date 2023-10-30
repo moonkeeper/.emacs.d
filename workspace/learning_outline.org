@@ -8,3 +8,14 @@
 *** resource_url
 **** https://tech.meituan.com/2020/04/02/java-pooling-pratice-in-meituan.html
 **** https://cloud.tencent.com/developer/article/1962369
+
+
+* CS 自学指南
+** https://csdiy.wiki/计算机网络/topdown_ustc/
+
+
+
+* Python
+** Project Structure https://zhuanlan.zhihu.com/p/387982949
+** Env Tools https://zhuanlan.zhihu.com/p/57997868
+** Samples https://zhuanlan.zhihu.com/p/137655320
