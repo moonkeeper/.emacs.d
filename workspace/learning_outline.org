@@ -19,3 +19,25 @@
 ** Project Structure https://zhuanlan.zhihu.com/p/387982949
 ** Env Tools https://zhuanlan.zhihu.com/p/57997868
 ** Samples https://zhuanlan.zhihu.com/p/137655320
+
+
+
+
+* Front
+** javascript
+** typescript
+** nestjs - nodejs
+
+
+* K8s
+** 基础架构
+** Network
+** Api-Server
+** Pod
+** Service
+** Endpoint
+** Ingress
+** ConfigMap
+** Sercet
+** stateful
+** DaemonSet
